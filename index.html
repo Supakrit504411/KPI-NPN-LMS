@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 Data Analytics Dashboard</title>
+    <title>📊 Data Analytics Dashboard KPI PEA NAKHONPHANOM</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Sarabun', sans-serif; }
-        .blur-bg { backdrop-filter: blur(100px); }
+        .blur-bg { backdrop-filter: blur(3px); }
         .smooth-line { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
     <!-- Login Modal -->
-    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+    <div id="loginModal" class="fixed inset-0 blur-bg flex items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-8 shadow-2xl w-96 transform transition-all">
             <div class="text-center mb-6">
                 <div class="text-4xl mb-2">🔐</div>
                 <h2 class="text-2xl font-bold text-gray-800">เข้าสู่ระบบ</h2>
-                <p class="text-gray-600">กรุณาใส่ข้อมูลเพื่อเข้าใช้งาน</p>
+                <p class="text-gray-600">KPI PEA NAKHONPHANOM</p>
             </div>
             <form id="loginForm" class="space-y-4">
                 <div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <h3 class="text-xl font-bold text-gray-800 mb-3">กำลังเข้าสู่ระบบ...</h3>
-            <p class="text-gray-600 mb-4">กรุณารอสักครู่ ระบบกำลังตรวจสอบข้อมูล</p>
+            <p class="text-gray-600 mb-4">ระบบกำลังตรวจสอบ PASSWORD</p>
             <div class="flex justify-center space-x-1">
                 <div class="w-2 h-2 bg-blue-600 rounded-full animate-bounce"></div>
                 <div class="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
@@ -67,25 +67,25 @@
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-3">
                         <div class="text-3xl">📊</div>
-                        <h1 class="text-2xl font-bold text-gray-800">Data Analytics Dashboard</h1>
+                        <h1 class="text-2xl font-bold text-gray-800">Analytics Dashboard KPI PEA NAKHONPHANOM</h1>
                     </div>
                     <div class="flex items-center space-x-4">
                         <!-- Quick Links -->
                         <div class="flex space-x-2">
+                            <button onclick="openLink('https://peaex.pea.co.th/reports/powerbi/PRD/%E0%B8%81%E0%B8%9F%E0%B8%89.1%20%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5/%E0%B8%81%E0%B8%9A%E0%B8%A5./Dashboard-KPIs-BI')" 
+                                    class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
+                                📄 LINK KPI NE1
+                            </button>
                             <button onclick="openLink('https://docs.google.com/spreadsheets/d/1kkvzGDXVpJWeDtDobtYIbwoTYpJdFaXVuiZO0nHuhxQ/edit?gid=387811623#gid=387811623')" 
                                     class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
-                                📊 Sheets
-                            </button>
-                            <button onclick="openLink('https://script.google.com/macros/s/AKfycbzGq5dZPVaUra1BovkHu4HQ6zBq5VkxfpEIUxToR8pRJeuVULUlPT5qCd6DIF3vU6q3/exec')" 
-                                    class="bg-purple-500 hover:bg-purple-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
-                                ⚙️ Apps Script
+                                ⚙️ LINK KPI SHEET
                             </button>
                             <button onclick="openLink('https://docs.google.com')" 
-                                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
-                                📄 Docs
+                                    class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
+                                📄 KPI_XS PEA_NAKHONPHANOM
                             </button>
                         </div>
-                        <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-colors">
+                        <button id="logoutBtn" class="bg-gray-200 hover:bg-gray-200 text-white px-4 py-2 rounded-lg transition-colors">
                             🚪 ออกจากระบบ
                         </button>
                     </div>
