@@ -1635,7 +1635,7 @@
             ctx.fillStyle = '#1F2937';
             ctx.font = 'bold 28px Arial, sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText('🏆 อันดับผลการดำเนินงาน', canvas.width / 2, 40);
+            ctx.fillText('🏆 ผลการดำเนินงาน', canvas.width / 2, 40);
             
             // Draw table headers background
             ctx.fillStyle = '#F3F4F6';
@@ -1753,7 +1753,7 @@
             
             // Download
             const link = document.createElement('a');
-            link.download = `อันดับผลการดำเนินงาน_${new Date().toLocaleDateString('th-TH').replace(/\//g, '-')}.png`;
+            link.download = `ผลการดำเนินงาน_${new Date().toLocaleDateString('th-TH').replace(/\//g, '-')}.png`;
             link.href = canvas.toDataURL('image/png', 1.0);
             link.click();
         }
